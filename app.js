@@ -9,8 +9,7 @@ btn.addEventListener('click', function () {
     let difficulty = document.getElementById('difficulty').value;
 
     let cell = 0;
-    let columns =0;
-    let cellSize
+    let columns = 0;
 
 
     switch (difficulty) {
@@ -38,15 +37,16 @@ btn.addEventListener('click', function () {
             console.log(cell, columns)
     }
 
-for (let i = 1; i < cell + 1; i++) {
-    let cellElement = document.createElement('div');
-    grid.append(cellElement);
-    cellElement.append(i);
-    cellElement.classList.add('cell');
+    grid.innerHTML = '';
 
-    cellSize = `calc(100% / ${columns})`
-    cellElement.style.width = cellSize;
-}
+    for (let i = 1; i < cell + 1; i++) {
+        const cellElement = document.createElement('div');
+        grid.append(cellElement);
+        cellElement.append(i);
+        cellElement.classList.add('cell');
+
+        cellElement.style.width = `calc(100% / ${columns})`;
+    }
 })
 
 
