@@ -45,7 +45,7 @@ btn.addEventListener('click', function () {
         cellElement.append(i);
         cellElement.classList.add('cell');
 
-        cellElement.style.width = `calc(100% / ${columns})`;
+        cellElement.style.width = `calc((100% - 1.5em ) / ${columns})`;
     }
 })
 

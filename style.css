@@ -52,7 +52,6 @@ main{
 .grid{
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     max-width:400px;
     height: 400px;
 }
@@ -63,6 +62,7 @@ main{
     justify-content: center;
     align-items: center;
     background-color: bisque;
-    /* border: 1px solid rgb(211, 174, 130); */
-    /* SE METTO IL BORDO SI FOTTE TUTTO */
+    border: 1px solid rgb(211, 174, 130);
+    /* SE METTO IL BORDO SI FOTTE TUTTO, io boh non ho parole ma perchè?! --------->
+    ------->      `calc((100% - 1.5em ) / ${columns})` */   
 }
