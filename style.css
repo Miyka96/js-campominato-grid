@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 .container{
     width: 100%;
@@ -42,7 +43,7 @@ header{
 }
 
 main{
-    background-color: aquamarine;
+    background-color: rgb(86, 59, 185);
     height: calc(100vh - 50px - 50px);
     display: flex;
     justify-content: center;
@@ -54,6 +55,7 @@ main{
     flex-wrap: wrap;
     max-width:400px;
     height: 400px;
+    box-shadow: 5px 5px 15px 5px rgba(38,7,56,0.87);
 }
 .cell{
     aspect-ratio: 1;
@@ -61,8 +63,13 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: bisque;
-    border: 1px solid rgb(211, 174, 130);
-    /* SE METTO IL BORDO SI FOTTE TUTTO, io boh non ho parole ma perchè?! --------->
-    ------->      `calc((100% - 1.5em ) / ${columns})` */   
+    background-color: rgb(121, 102, 190);
+    border: 1px solid rgb(38, 7, 56);
+    color: white;
+    box-shadow: inset 0px 0px 41px -5px rgba(38,7,56,0.87)
+    ;
+}
+.cell:hover{
+    filter: saturate(2);
+    transition: ease-in 0.2s;
 }

@@ -16,25 +16,21 @@ btn.addEventListener('click', function () {
         case "1":
             cell = 100;
             columns = 10;
-            console.log(cell, columns)
             break;
 
         case "2":
             cell = 81;
             columns = 9;
-            console.log(cell, columns)
             break;
 
         case "3":
             cell = 49;
             columns = 7;
-            console.log(cell, columns)
             break;
 
         default:
             cell = 100;
             columns = 10;
-            console.log(cell, columns)
     }
 
     grid.innerHTML = '';
@@ -45,9 +41,13 @@ btn.addEventListener('click', function () {
         cellElement.append(i);
         cellElement.classList.add('cell');
 
-        cellElement.style.width = `calc((100% - 1.5em ) / ${columns})`;
+        cellElement.style.width = `calc( 100% / ${columns} )`;
     }
+
+    
 })
+
+
 
 
 
